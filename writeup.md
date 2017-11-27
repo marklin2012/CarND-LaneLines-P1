@@ -31,7 +31,9 @@ The goals / steps of this project are the following:
 My pipeline consisted of 6 steps. 
 
 1. I converted the images to grayscale.
+
 ![alt text][grayscale]
+
 2. I use using guassian_blur function with kernel_size of 7 to blur gray my grayscale image.
 ![alt text][blurgray]
 3. Then I user canny function with low_threshold 50 and high_threshold 150 to get the edges.
