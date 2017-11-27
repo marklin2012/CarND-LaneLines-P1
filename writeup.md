@@ -16,12 +16,19 @@ The goals / steps of this project are the following:
 [//]: # (Image References)
 
 [image1]: ./examples/grayscale.jpg "Grayscale"
+
 [grayscale]: ./source/gray.jpg "grayscale"
+
 [blurgray]: ./source/blur_gray.jpg "blurgray"
+
 [edges]: ./source/edges.jpg "edges"
+
 [masked_edges]: ./source/masked_edges.jpg "masked_edges"
+
 [lines]: ./source/lines.jpg "lines"
+
 [lines_edges]: ./source/line_edges.jpg "lines_edges"
+
 ---
 
 ### Reflection
@@ -35,14 +42,23 @@ My pipeline consisted of 6 steps.
 ![alt text][grayscale]
 
 2. I use using guassian_blur function with kernel_size of 7 to blur gray my grayscale image.
+
 ![alt text][blurgray]
+
 3. Then I user canny function with low_threshold 50 and high_threshold 150 to get the edges.
+
 ![alt text][edges]
+
 4. Then I keeps a region of interest defined by the polygon with a vecters, and I get a mask edge
+
 ![alt text][masked_edges]
+
 5. After the masked_edges image, I use hough_lines function with some parameters to  obtain the Hough lines list from the masked area. And I also modified draw_lines function to get lines.
+
 ![alt text][lines]
+
 6. Finally, I combine the lines image and origin image copyed to get the final image, then return the image to complete the pipeline function.
+
 ![alt text]![lines_edges]
 
 In order to draw a single line on the left and right lanes, I modified the draw_lines() function.
